@@ -12,8 +12,8 @@ interface ButtonProps {
 export function Button({ variant = 'primary', children, icon = false, type = 'button' }: ButtonProps) {
   const baseStyles = "px-8 py-3 rounded-md font-medium transition-all duration-200";
   const variants = {
-    primary: `bg-black text-white hover:bg-[${theme.colors.primaryHover}]`,
-    secondary: "border-2 border-black text-black hover:bg-black/5"
+    primary: `bg-black dark:bg-white text-white dark:text-black hover:bg-[${theme.colors.primaryHover}] dark:hover:bg-gray-200`,
+    secondary: "border-2 border-black dark:border-white text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/5"
   };
 
   return (

@@ -28,49 +28,49 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 dark:bg-black">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Get Started</h2>
-          <p className="text-gray-600">Ready to transform your business? Let's talk about your project.</p>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Get Started</h2>
+          <p className="text-gray-600 dark:text-gray-300">Ready to transform your business? Let's talk about your project.</p>
         </div>
         
         {isSubmitted ? (
-          <div className="text-center p-6 bg-green-50 rounded-lg">
-            <h3 className="text-lg font-semibold text-green-800 mb-2">Thank you for your message!</h3>
-            <p className="text-green-600">We'll get back to you as soon as possible.</p>
+          <div className="text-center p-6 bg-green-50 dark:bg-green-900/50 rounded-lg">
+            <h3 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-2">Thank you for your message!</h3>
+            <p className="text-green-600 dark:text-green-300">We'll get back to you as soon as possible.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-black dark:focus:ring-white focus:border-black dark:focus:border-white bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
                 required
               />
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-black dark:focus:ring-white focus:border-black dark:focus:border-white bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
                 required
               />
             </div>
             
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
               <textarea
                 id="message"
                 name="message"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-black focus:border-black"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-black dark:focus:ring-white focus:border-black dark:focus:border-white bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
                 required
               ></textarea>
             </div>
